@@ -1,0 +1,10 @@
+[Unit]
+Description = hexo service
+After = network.target
+
+[Service]
+ExecStart = /usr/bin/hexo server --cwd /root/blog
+
+[Install]
+WantedBy = multi-user.target
+

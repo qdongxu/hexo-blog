@@ -1,0 +1,10 @@
+[Unit]
+Description = hexo service
+After = network.target
+
+[Service]
+WorkingDirectory = /root/github/hexo-blog/webhook
+ExecStart = python3 server.py
+
+[Install]
+WantedBy = multi-user.target
