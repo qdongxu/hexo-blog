@@ -7,7 +7,7 @@ title: Stone's Blog
 subtitle: ''
 description: ''
 keywords:
-author: Strone Xu
+author: Stone Xu
 language: en
 timezone: ''
 
@@ -99,3 +99,16 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:

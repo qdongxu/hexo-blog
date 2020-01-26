@@ -6,8 +6,8 @@ fi
 
 git pull --force origin master:master
 
-cd  $HEXOBLOG_HOME/themes/3-hexo
-git pull --force xdy master:xdy_master
+#cd  $HEXOBLOG_HOME/themes/3-hexo
+#git pull --force xdy master:xdy_master
 
 cd $HEXOBLOG_HOME
 
