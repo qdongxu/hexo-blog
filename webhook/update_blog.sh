@@ -1,7 +1,7 @@
 #!/bin/bash -xv
 
 if [ -n $HEXOBLOG_HOME ]; then
-    HEXOBLOG_HOME=/root/blog
+    HEXOBLOG_HOME=/root/hexoblog
 fi
 
 git pull --force origin master:master
