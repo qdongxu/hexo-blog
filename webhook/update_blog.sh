@@ -12,3 +12,5 @@ git pull --force origin master:master
 cd $HEXOBLOG_HOME
 
 hexo generate
+
+cp -rup /root/hexoblog/public/*  /data/wwwroot/www.i2038.com/
