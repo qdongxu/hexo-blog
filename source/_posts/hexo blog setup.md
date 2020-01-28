@@ -2,7 +2,6 @@
 title: 网站诞生记
 tags:
 	- share
-    - blog
 date: 2020-01-26
 categories:
     - helloworld
