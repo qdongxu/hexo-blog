@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Stone's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+    <body>
+    <p>Page not found. will jump to <a href="/"> Home Page</a> in <font color="red" id="num">5</font> seconds ...</p>
+    <p>页面不存在, <font color="red" id="num2">5</font> 秒钟后跳转到 <a href="/"> 网站主页</a> ...</p>
+    <script>
+        var sec = 5;
+        function countDown() {
+            console.log(sec);
+            if ( sec <= 0) {
+                window.location='/';
+            } else {
+                sec--;
+                num.innerHTML = sec;
+                num2.innerHTML = sec;
+            }
+        }
+        setInterval('countDown()',1000);
+    </script>
+    </body>
+</html>
