@@ -13,4 +13,4 @@ cd $HEXOBLOG_HOME
 
 hexo generate
 
-cp -rup /root/hexoblog/public/*  /data/wwwroot/www.i2038.com/
+cp -rup /root/hexoblog/public/*  /data/wwwroot/www.kake.co/
