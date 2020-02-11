@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 啡喀湾
+title: 咖珂湾
 subtitle: ''
 description: ''
 keywords:
-author: Cafei Bay
+author: Kakebay
 language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.i2038.com
+url: https://www.kake.one
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
