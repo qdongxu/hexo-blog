@@ -55,8 +55,3 @@ categories:
 ### 写作流程
 
 由于博客文章本来就是公开的，而且是 markdown 纯文本的, 所以在github上建了一个 git 代码库 保存。 通过github提供的 webhook 通知机制。每当有新文章提交到 github。github推送通知到博客网站。 博客网站接到通知后，从 github 拉取最新的提交，调用 `hexo generate` 命令行生成新的文章列表。读者就可以看到新博客了。
-
-### 待解决问题
-
-1. 网站安装了 letsencrypt ssl 证书，但是 chrome 和 safari 浏览器都提示网站不安全，还没找到原因，这个有点尴尬了，后面再说吧。
-2. 增加留言/评论功能
