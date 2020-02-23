@@ -263,6 +263,10 @@ date: 2020-01-27
         <h3>湖北以外每日新增 确诊、疑似</h3>
         <canvas id="myChart-d2" width="400" height="240"></canvas>
     </div>
+    <div>
+        <h3>湖北每日新增 确诊、疑似</h3>
+        <canvas id="myChart-d3" width="400" height="240"></canvas>
+    </div>
     <br/>
     <div>
         <h3>每日新增 重症、死亡、治愈</h3>
@@ -397,6 +401,59 @@ date: 2020-01-27
             }, {
                 label: '确诊 | 疑似 (湖北以外)',
                 data: sd2_5,
+                type: 'line',
+                borderColor: 'purple',
+                borderWidth: 1,
+                // this dataset is drawn on top
+                order: 3
+            }],
+            labels: labelsd2
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }],
+                xAxes:[{
+                    ticks: {
+                        autoSkip: true,
+                        maxRotation: 0,
+                        minRotation: 0
+                    }
+                }]
+            }
+        }
+    });
+        sd2_1 = extractDeltaOutHubei('疑似(湖北)');
+        sd2_2 = extractDeltaOutHubei('确诊(湖北)');
+        sd2_3 = [];
+    for ( i = 0; i < sd2_1.length; i++ ) {
+        sd2_3.push(sd2_1[i]+sd2_2[i]);
+    }
+    var ctxd2 = document.getElementById('myChart-d3').getContext('2d');
+    var myChartd2 = new Chart(ctxd2, {
+        type: 'line',
+        data: {
+            datasets: [{
+                label: '疑似(湖北)',
+                data: sd2_1,
+                borderColor: 'orange',
+                borderWidth: 1,
+                // this dataset is drawn below
+                order: 2
+            }, {
+                label: '确诊(湖北)',
+                data: sd2_2,
+                type: 'line',
+                borderColor: 'red',
+                borderWidth: 1,
+                // this dataset is drawn on top
+                order: 3
+            }, {
+                label: '确诊 | 疑似 (湖北)',
+                data: sd2_3,
                 type: 'line',
                 borderColor: 'purple',
                 borderWidth: 1,
