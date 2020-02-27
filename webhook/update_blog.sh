@@ -12,5 +12,5 @@ git pull --force origin master:master
 cd $HEXOBLOG_HOME
 
 hexo generate
-
+rm -rf /data/wwwroot/www.kake.one/*
 cp -rup /root/hexoblog/public/*  /data/wwwroot/www.kake.one/

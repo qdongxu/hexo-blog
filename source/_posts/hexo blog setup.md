@@ -1,7 +1,7 @@
 ---
 title: 网站诞生记
 tags:
-	- share
+	- tips
 date: 2020-01-26
 categories:
     - helloworld
