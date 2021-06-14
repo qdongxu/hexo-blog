@@ -14,4 +14,4 @@ cd $HEXOBLOG_HOME
 hexo generate
 rm -rf /data/wwwroot/www.kake.one/*
 cp -rup /root/hexoblog/public/*  /data/wwwroot/www.kake.one/
-cp -rup /root/hexoblog/source/_posts/img  /data/wwwroot/www.kake.one/
+#cp -rup /root/hexoblog/source/_posts/img  /data/wwwroot/www.kake.one/
