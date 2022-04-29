@@ -1,9 +1,9 @@
 ---
-title: Hello World
+title: 一文看懂C语言值传递和指针传递
 tags:
-	- c语言
+	- c
 	- c++
-	- helloword
+	- 编程
 categories:
     - helloworld
 date: 2020-04-15
